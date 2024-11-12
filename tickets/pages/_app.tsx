@@ -1,11 +1,7 @@
+'use client'
 import '../styles/globals.css'
-import TicketBuilder from './ticket-builder' 
-import React from 'react'
+import type { AppProps } from 'next/app'
 
-function MyApp() {
-  return (
-      <TicketBuilder/>
-  ) 
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
 }
-
-export default MyApp
